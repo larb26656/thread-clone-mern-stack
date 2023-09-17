@@ -6,6 +6,7 @@ import {
   SignOutButton,
   SignedIn,
 } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export function Topbar() {
   return (
@@ -32,6 +33,7 @@ export function Topbar() {
         </div>
         <OrganizationSwitcher
           appearance={{
+            baseTheme: dark,
             elements: {
               organizationSwitcherTrigger: "py-2 px-4",
             },
